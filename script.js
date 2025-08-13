@@ -64,10 +64,10 @@ function calculateOperations() {
     //Aqui inicia el codigo para las operaciones del ejercicio 1
 
     //Declara las constantes necesarias para las operaciones de acuerdo a los outputs
-    const suma = 0;
-    const resta = 0;
-    const multiplicacion = 0;
-    const division = 0;
+    const suma = num1 + num2;
+    const resta = num1 - num2;
+    const multiplicacion = num1 * num2;
+    const division = num1 / num2; // Asegúrate de manejar la división por cero más adelante
 
     //Aqui hace las operaciones
     
@@ -155,6 +155,9 @@ function calculateVelocity() {
     }
     
     // Calcular la velocidad usando solo el operador aritmético de división
+
+
+    const velocidad = distancia / tiempo; 
 
     //Aqui inicia el codigo para el ejercicio 2
 
@@ -254,19 +257,28 @@ function calculateCommissions() {
     // Declara las constantes necesarias para el ejercicio 3 de acuerdo a los outputs
     // Calcular comisiones usando solo operadores aritméticos (10% = 0.1)
     //Usa estas constantes para calcular las comisiones de acuerdo a los outputs
-    const comision1=0; //Esta es la constante inicializda para la primera comision
-    const comision2=0; //Esta es la constante inicializada para la segunda comision
-    const comision3=0; //Esta es la constante inicializada para la tercera comision
-
+    let comision1=0; //Esta es la constante inicializda para la primera comision
+    let comision2=0; //Esta es la constante inicializada para la segunda comision
+    let comision3=0; //Esta es la constante inicializada para la tercera comision
+    let porcentajeComision = 0.1; // 10% de comisión
     //Realiza las operaciones necesarias para calcular las comisiones de acuerdo a los outputs
     
     // Calcular totales usando solo operadores aritméticos
-    const totalVentas = 0; //Esta es la constante inicializada para el total de ventas
-    const totalComisiones = 0; //Esta es la constante inicializada para el total de comisiones
-    const totalRecibir = 0; //Esta es la constante inicializada para el total a recibir
+    let totalVentas = 0; //Esta es la constante inicializada para el total de ventas
+    let totalComisiones = 0; //Esta es la constante inicializada para el total de comisiones
+    let totalRecibir = 0; //Esta es la constante inicializada para el total a recibir
 
     //Realiza las operaciones necesarias para calcular las comisiones y los totales de acuerdo a los outputs
     
+    comision1 = venta1 * porcentajeComision;
+    comision2 = venta2 * porcentajeComision;
+    comision3 = venta3 * porcentajeComision;    
+
+    totalVentas = venta1 + venta2 + venta3;
+    totalComisiones = comision1 + comision2 + comision3;
+    totalRecibir = sueldoBase + totalComisiones;
+
+
     // Aqui termina el codigo para el ejercicio 3
     
     // Mostrar los valores de las ventas
